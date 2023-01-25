@@ -1,4 +1,12 @@
+*{
+    font-size: 1.2rem;
+    /* overflow: scroll; */
+}
 
+@font-face {
+    font-family: norsebold;
+    src: url(./Norse-Bold.otf) format("opentype");
+}
 
 body{
     width: 100vw;
@@ -8,10 +16,46 @@ body{
 }
 
 
-.first-column{
-    background-color: aqua;
-    width: 500px;
+
+.page-name {
+    position: absolute;
+
+    top: 190px;
+    height: 170px;
+    background-color: rgba(10, 9, 9, 0.46);
+    font-family:  norsebold,sans-serif;
+    color: #f6f1f1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.page-name > img {
+    width: 100px;
+    height: auto;
+}
+
+.page-name > span {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+.first-column{
+    /* background-color: aqua; */
+    background: left / cover   no-repeat url('./plantita.jpg');
+    width: 500px;
+    position: relative;
+
+}
+
+
 
 .second-column{
     flex: 1;
