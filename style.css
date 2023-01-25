@@ -1,0 +1,18 @@
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0px;
+}
+
+
+.first-column{
+    background-color: aqua;
+    width: 500px;
+}
+
+.second-column{
+    flex: 1;
+}
