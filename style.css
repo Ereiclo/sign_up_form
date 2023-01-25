@@ -1,12 +1,22 @@
-*{
-    font-size: 1.2rem;
-    /* overflow: scroll; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&family=Sarabun&display=swap');
 
 @font-face {
     font-family: norsebold;
     src: url(./Norse-Bold.otf) format("opentype");
 }
+
+html{
+    font-size: 20px;
+}
+
+*{
+    font-size: 1.2rem;
+    font-family: 'Roboto',sans-serif;
+    --margin-left: 40px;
+    /* overflow: scroll; */
+}
+
+
 
 body{
     width: 100vw;
@@ -40,9 +50,8 @@ body{
 .page-name > span {
     font-size: 4rem;
     font-weight: bolder;
+    font-family: inherit;
 }
-
-
 
 
 
@@ -52,11 +61,97 @@ body{
     background: left / cover   no-repeat url('./plantita.jpg');
     width: 500px;
     position: relative;
+    min-width: 300px;
 
 }
 
+.credits{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color:rgb(255, 255, 255);
+    font-size: 0.7rem;
+
+}
 
 
 .second-column{
     flex: 1;
+    background-color: rgb(249, 249, 249);
+
 }
+
+
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+
+    /* justify-content: space-around; */
+}
+
+
+
+.input-section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-container{
+    position: relative;
+
+}
+
+.input-container > label {
+    display: block;
+    font-family: 'Inter',sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.input-container:first-child,.form-row > h3 {
+    margin-left:var(--margin-left);
+}
+
+.input-container + .input-container {
+    margin-left: 70px;
+}
+
+
+input[type="text"],
+input[type="pass"]{
+    border:rgba(145, 143, 143, 0.317) solid 2px;
+    border-radius: 8px;
+    padding: 6px 10px;
+    height: 18px;
+}
+
+
+.introduction-text{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    overflow-wrap: break-word;
+    width: 800px;
+    text-align: left;
+    font-weight: 700;
+    margin-left:var(--margin-left);
+}
+
+
+p:first-child{
+    margin-top: 70px;
+}
+
+p + p {
+    margin-bottom: 40px;
+}
+
+
