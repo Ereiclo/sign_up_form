@@ -7,6 +7,9 @@
 
 html{
     font-size: 20px;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 *{
@@ -19,8 +22,8 @@ html{
 
 
 body{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     margin: 0px;
 }
@@ -62,6 +65,7 @@ body{
     width: 500px;
     position: relative;
     min-width: 300px;
+    height: 100%;
 
 }
 
@@ -80,6 +84,7 @@ body{
 .second-column{
     flex: 1;
     background-color: rgb(249, 249, 249);
+    overflow: scroll;
 
 }
 
@@ -155,3 +160,52 @@ p + p {
 }
 
 
+.submit {
+    margin-left: var(--margin-left);
+
+}
+
+.submit > button{
+    background-color: #596D48;
+    /* border: none; */
+    border-radius: 6px;
+    /* box-shadow: none; */
+    border: none;
+    color:white;
+    padding:15px 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: black 0px 0px 2px 0px;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+a:link {
+    color:#596D48;
+}
+
+a:visited{
+    color:#2e3c21;
+
+}
+
+
+
+
+a:hover{
+    text-decoration: none;
+}
+
+
+.submit > button:hover {
+
+    background-color:#2e3c21;
+}
+
+
+.submit > button:active {
+    background-color:#161f0e;
+    color:rgb(157, 157, 157);
+    box-shadow: black 0px 0px 10px 0px;
+}
